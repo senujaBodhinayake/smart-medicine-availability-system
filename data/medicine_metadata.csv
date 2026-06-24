@@ -1,0 +1,51 @@
+medicine,category,age_group,text
+Amlodipine,Chronic,0-12,Chronic 0-12
+Amlodipine,Chronic,26-45,Chronic 26-45
+Vitamin C,Vitamin,0-12,Vitamin 0-12
+Metformin,Chronic,26-45,Chronic 26-45
+Azithromycin,Antibiotic,65+,Antibiotic 65+
+Metformin,Chronic,13-25,Chronic 13-25
+Cough Syrup,Cough_Cold,46-65,Cough_Cold 46-65
+Amlodipine,Chronic,65+,Chronic 65+
+Azithromycin,Antibiotic,13-25,Antibiotic 13-25
+Amlodipine,Chronic,46-65,Chronic 46-65
+Azithromycin,Antibiotic,0-12,Antibiotic 0-12
+Vitamin C,Vitamin,13-25,Vitamin 13-25
+Vitamin C,Vitamin,26-45,Vitamin 26-45
+Amoxicillin,Antibiotic,46-65,Antibiotic 46-65
+Paracetamol,Antipyretic,13-25,Antipyretic 13-25
+Multivitamin,Vitamin,13-25,Vitamin 13-25
+Cetirizine,Cough_Cold,13-25,Cough_Cold 13-25
+Amoxicillin,Antibiotic,0-12,Antibiotic 0-12
+Cetirizine,Cough_Cold,26-45,Cough_Cold 26-45
+Metformin,Chronic,46-65,Chronic 46-65
+Cetirizine,Cough_Cold,65+,Cough_Cold 65+
+Metformin,Chronic,0-12,Chronic 0-12
+Azithromycin,Antibiotic,46-65,Antibiotic 46-65
+Amoxicillin,Antibiotic,13-25,Antibiotic 13-25
+Cough Syrup,Cough_Cold,0-12,Cough_Cold 0-12
+Ibuprofen,Antipyretic,0-12,Antipyretic 0-12
+Ibuprofen,Antipyretic,13-25,Antipyretic 13-25
+Azithromycin,Antibiotic,26-45,Antibiotic 26-45
+Multivitamin,Vitamin,46-65,Vitamin 46-65
+Paracetamol,Antipyretic,0-12,Antipyretic 0-12
+Multivitamin,Vitamin,26-45,Vitamin 26-45
+Cough Syrup,Cough_Cold,13-25,Cough_Cold 13-25
+Amoxicillin,Antibiotic,26-45,Antibiotic 26-45
+Paracetamol,Antipyretic,26-45,Antipyretic 26-45
+Multivitamin,Vitamin,65+,Vitamin 65+
+Vitamin C,Vitamin,46-65,Vitamin 46-65
+Vitamin C,Vitamin,65+,Vitamin 65+
+Multivitamin,Vitamin,0-12,Vitamin 0-12
+Amoxicillin,Antibiotic,65+,Antibiotic 65+
+Paracetamol,Antipyretic,65+,Antipyretic 65+
+Metformin,Chronic,65+,Chronic 65+
+Cetirizine,Cough_Cold,46-65,Cough_Cold 46-65
+Paracetamol,Antipyretic,46-65,Antipyretic 46-65
+Ibuprofen,Antipyretic,26-45,Antipyretic 26-45
+Ibuprofen,Antipyretic,46-65,Antipyretic 46-65
+Cetirizine,Cough_Cold,0-12,Cough_Cold 0-12
+Ibuprofen,Antipyretic,65+,Antipyretic 65+
+Cough Syrup,Cough_Cold,26-45,Cough_Cold 26-45
+Amlodipine,Chronic,13-25,Chronic 13-25
+Cough Syrup,Cough_Cold,65+,Cough_Cold 65+
