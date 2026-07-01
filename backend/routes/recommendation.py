@@ -25,10 +25,29 @@ similarity = pickle.load(
 @router.get("/{medicine}")
 def recommend(medicine:str):
 
+    # Map common brand names to generic names for the AI
+    synonyms = {
+        "panadol": "paracetamol",
+        "tylenol": "paracetamol",
+        "advil": "ibuprofen",
+        "motrin": "ibuprofen",
+        "augmentin": "amoxicillin",
+        "glucophage": "metformin",
+        "norvasc": "amlodipine",
+        "zyrtec": "cetirizine",
+        "prilosec": "omeprazole"
+    }
+    
+    search_term = medicine.lower()
+    for brand, generic in synonyms.items():
+        if brand in search_term:
+            search_term = generic
+            break
+
     # Strip out dosages to match ML dataset (e.g., "Paracetamol 500mg" -> "Paracetamol")
     base_medicine = None
     for med in medicine_df.medicine.values:
-        if med.lower() in medicine.lower():
+        if med.lower() in search_term:
             base_medicine = med
             break
 
