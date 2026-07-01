@@ -25,14 +25,18 @@ similarity = pickle.load(
 @router.get("/{medicine}")
 def recommend(medicine:str):
 
-    if medicine not in medicine_df.medicine.values:
-        return {
-            "error":"Medicine not found"
-        }
+    # Strip out dosages to match ML dataset (e.g., "Paracetamol 500mg" -> "Paracetamol")
+    base_medicine = None
+    for med in medicine_df.medicine.values:
+        if med.lower() in medicine.lower():
+            base_medicine = med
+            break
 
+    if not base_medicine:
+        return []
 
     idx = medicine_df[
-        medicine_df.medicine == medicine
+        medicine_df.medicine == base_medicine
     ].index[0]
 
 
@@ -51,15 +55,20 @@ def recommend(medicine:str):
     result=[]
 
 
-    for i,score in scores[1:6]:
-
+    for rank, (i, score) in enumerate(scores[1:6], start=1):
+        row = medicine_df.iloc[i]
+        
+        cat = row.category if "category" in row else "Unknown"
+        age = row.age_group if "age_group" in row else "Unknown"
+        
         result.append(
             {
-            "medicine":
-            medicine_df.iloc[i].medicine,
-
-            "similarity":
-            round(float(score),3)
+                "rank": rank,
+                "medicine_name": row.medicine,
+                "category": cat,
+                "age_group": age,
+                "dosage_form": "Unknown",
+                "similarity_score": int(round(float(score) * 100))
             }
         )
 
