@@ -6,6 +6,7 @@ import RecommendationsPage from './pages/RecommendationsPage'
 import DashboardPage from './pages/DashboardPage'
 import MedicineDetailPage from './pages/MedicineDetailPage'
 import NotFoundPage from './pages/NotFoundPage'
+import StockPredictionPage from './pages/StockPredictionPage'
 import { ToastProvider } from './components/Toast'
 
 /* Scrolls to top and applies page-enter animation on every route change */
@@ -28,6 +29,7 @@ function App() {
           <Route path="/recommend/:medicine"  element={<RecommendationsPage />} />
           <Route path="/dashboard"            element={<DashboardPage />} />
           <Route path="/medicine/:id"         element={<MedicineDetailPage />} />
+          <Route path="/predict"              element={<StockPredictionPage />} />
           <Route path="*"                     element={<NotFoundPage />} />
         </Routes>
       </ToastProvider>

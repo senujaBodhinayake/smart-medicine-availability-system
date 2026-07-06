@@ -23,8 +23,10 @@ scaler = pickle.load(
 )
 
 
+from typing import List
+
 @router.post("/")
-def stock_status(data:list):
+def stock_status(data: List[List[float]]):
 
     x=np.array(data)
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import {
   LayoutDashboard, Pill, TrendingUp, Sparkles,
-  Stethoscope, User,
+  Stethoscope, User, Activity
 } from 'lucide-react'
 
 const NAV_ITEMS = [
@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { to: '/search',            icon: Pill,            label: 'Medicines'       },
   { to: '/search?forecast=1', icon: TrendingUp,      label: 'Forecasts'       },
   { to: '/recommend/all',     icon: Sparkles,        label: 'Recommendations' },
+  { to: '/predict',           icon: Activity,        label: 'AI Stock Predict'}
 ]
 
 function Sidebar({ collapsed = false }) {
